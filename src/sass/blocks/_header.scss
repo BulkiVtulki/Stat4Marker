@@ -1,0 +1,80 @@
+.header {
+    margin-top: 23px;
+    height: 92px;
+    &__wrapper {
+        padding-top: 12px;
+        display: flex;
+    }
+    &__logo {
+        display: flex;
+    }
+    &__linkToMain {
+        position: relative;
+    }
+    &__img {
+        margin: 0 20px;
+        justify-self: flex-end;
+        align-self: center;
+        text-align: right;
+    }
+    &__descr {
+        width: 185px;
+        align-self: center;
+        font-weight: 400;
+        font-size: 14px;
+        line-height: 18px;
+        color: rgba(51, 26, 47, 0.9);
+    }
+    &__divider {
+        margin-right: 20px;
+        width: 1px;
+        height: 80px;
+        background: rgba(51, 26, 47, 0.5);;   
+    }
+    &__nav {
+        display: flex;
+        align-items: center;
+        font-size: 24px;
+        line-height: 35px;
+        color: #331A2F;
+    }
+    &__analyst {
+        cursor: pointer;
+        span {
+            margin-right: 50px;
+            width: 12px;
+            height: 12px;
+        }
+    }
+    &__link {
+        a {
+            color: #331A2F;
+            text-decoration: none; 
+        }
+    }
+    &__phone {
+        display: flex;
+        justify-content: flex-end;
+        align-items: center;
+        font-weight: 400;
+        font-size: 24px;
+        line-height: 35px;
+        color: #331A2F;
+        text-decoration: none;
+        justify-content: flex-end;
+        align-items: center;
+    }
+    &__btn {
+        padding-left: 76px;
+        margin: auto 0;
+    }
+    &__logIn {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 169px;
+        height: 45px;
+        background: $main-color;
+        border-radius: 12px;
+    }
+}
