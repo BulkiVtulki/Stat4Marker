@@ -34,9 +34,6 @@
     &__wrapper  {
         display: flex;
     }
-    &__descr {
-
-    }
     &__title {
         margin-top: 15px;
         margin-bottom: 0;
@@ -69,8 +66,7 @@
         }
     }
     &__text {
-        margin-top: 15px;
-        margin-bottom: 0;
+        margin-top: 16px;        
         font-weight: 400;
         font-size: 25px;
         line-height: 160%;

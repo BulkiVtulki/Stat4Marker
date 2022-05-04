@@ -1,0 +1,30 @@
+.history {
+    margin-top: 147px;
+    &__wrapper {
+        margin-top: 85px;
+        padding: 0 114px;
+        display: grid;
+        grid-template: minmax(470px, auto) minmax(475px, auto) / 455px 205px 475px;
+        grid-auto-rows: minmax(470px, auto);
+        justify-content: center;
+        align-items: center;
+        column-gap: 80px;
+    }
+    &__mobile, &__pc {
+        img {
+            width: 100%;
+        }
+    }
+    &__text {
+        font-weight: 400;
+        font-size: 25px;
+        line-height: 40px;
+        color: rgba(51, 26, 47, 0.8);
+    }
+    &__way {
+        grid-column: 2 / 4;
+    }
+    &__summer {
+        grid-column: 1 / 3;
+    }
+}

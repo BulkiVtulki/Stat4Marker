@@ -1,0 +1,62 @@
+.education {
+    margin-top: 140px;
+    padding-bottom: 131px;
+    &__title {
+        position: relative;
+        span {
+            color: #EA5DBB;
+            &::before {
+                content: "";
+                position: absolute;
+                width: 261px;
+                height: 7px;
+                background: linear-gradient(264.91deg, #7C4EAB 0.73%, #DD51D4 95.85%);
+                border-radius: 5px;
+                bottom: -8px;
+                transform: translateX(-31%);
+            }
+        }
+    }
+    &__subtitle {
+        margin-top: 23px;
+        font-weight: 400;
+        font-size: 25px;
+        line-height: 40px;
+        text-align: center;
+        color: rgba(51, 26, 47, 0.8);
+    }
+    &__wrapper {
+        margin-top: 85px;
+        display: grid;
+        grid-template: minmax(368px, auto) / repeat(4, 290px);
+        justify-content: space-between; 
+    }
+    &__img {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 70px;
+        height: 70px;
+        background: #CF51CE;
+        box-shadow: 0px 4px 25px rgba(234, 93, 187, 0.25);
+        border-radius: 15px;
+        img {
+            width: 48px;
+            height: 48px;
+        }
+    }
+    &__item-title {
+        margin-top: 30px;
+        font-weight: 600;
+        font-size: 24px;
+        line-height: 150%;
+        color: #331A2F;
+    }
+    &__descr {
+        margin-top: 15px;
+        font-weight: 400;
+        font-size: 18px;
+        line-height: 160%;
+        color: rgba(51, 26, 47, 0.8);
+    }
+}
