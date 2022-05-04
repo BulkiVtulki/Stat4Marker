@@ -1,12 +1,30 @@
 .header {
+    position: relative;
     margin-top: 23px;
     height: 92px;
+    &__bg-right {
+        position: absolute;
+        top: 385px;
+        right: 0;
+    }
+    &__bg-left {
+        position: absolute;
+        top: -23px;
+    }
     &__wrapper {
         padding-top: 12px;
         display: flex;
+        justify-content: center;
+        margin: 0 auto;
     }
     &__logo {
         display: flex;
+        &-img {
+            width: 61px;
+            img {
+                width: 100%;
+            }
+        }
     }
     &__linkToMain {
         position: relative;
@@ -40,6 +58,7 @@
     }
     &__analyst {
         cursor: pointer;
+        @include linkHover;
         span {
             margin-right: 50px;
             width: 12px;
@@ -50,9 +69,11 @@
         a {
             color: #331A2F;
             text-decoration: none; 
+            @include linkHover; 
         }
     }
     &__phone {
+        position: relative;
         display: flex;
         justify-content: flex-end;
         align-items: center;
@@ -63,12 +84,20 @@
         text-decoration: none;
         justify-content: flex-end;
         align-items: center;
+        @include linkHover;
+        &::before {
+            position: absolute;
+            content: url('../../img/icons/header/phone.svg');
+            width: 24px;
+            height: 24px;
+            top: 24px;
+            left: 26px;
+        }
     }
     &__btn {
-        padding-left: 76px;
-        margin: auto 0;
-    }
-    &__logIn {
+        margin: auto 0 auto 76px;
+        padding-left: 39px;
+        flex-grow: 1;
         display: flex;
         justify-content: center;
         align-items: center;
@@ -76,5 +105,33 @@
         height: 45px;
         background: $main-color;
         border-radius: 12px;
+    }
+    &__logIn {
+        position: relative;
+        font-weight: 500;
+        font-size: 23px;
+        line-height: 35px;
+        color: #FFFFFF;
+        text-decoration: none;
+        transition: all 1s;
+        z-index: 2;
+        &::before {
+            content: url('../../img/icons/header/logIn.svg');
+            position: absolute; 
+            width: 23px;
+            height: 23px;
+            top: 5px;
+            left: -37px;
+            opacity: 1;
+        }
+        &:hover {
+            color: black;
+            transform: translateX(-20px);
+            &::before {
+                transition: all 1s;
+                transform: translateX(37px);
+                opacity: 0;
+            }
+        }
     }
 }

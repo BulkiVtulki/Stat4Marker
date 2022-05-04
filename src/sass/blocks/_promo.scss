@@ -1,0 +1,95 @@
+.promo {
+    position: relative;
+    padding-top: 66px;
+    &__breadcrumb {
+
+        ul{
+            list-style-type: none;
+            margin-bottom: 0;
+            padding-left: 0;
+            li{
+                display: inline-block;
+                font-weight: 400;
+                font-size: 16px;
+                line-height: 19px;
+                color: rgba(51, 26, 47, 0.5);
+                &+li:before {
+                    padding: 8px;
+                    color: rgba(51, 26, 47, 0.5);
+                    content: "—";
+                }          
+                a {
+                    text-decoration: none;
+                    font-weight: 400;
+                    font-size: 16px;
+                    line-height: 19px;
+                    color: rgba(51, 26, 47, 0.5);
+                    &:hover {
+                        @include linkHover;
+                    }
+                }
+            }
+        }
+    }
+    &__wrapper  {
+        display: flex;
+    }
+    &__descr {
+
+    }
+    &__title {
+        margin-top: 15px;
+        margin-bottom: 0;
+        font-weight: 700;
+        font-size: 56px;
+        line-height: 80px;
+        color: #331A2F;
+        span {
+            color: $main-color;
+        }
+    }
+    &__price {
+        margin-top: 22px;
+        display: flex;
+        align-items: center;
+        &-img {
+            margin-right: 25px;
+        }
+        &-value {
+            font-weight: 600;
+            font-size: 20px;
+            line-height: 29px;
+            color: rgba(51, 26, 47, 0.8);
+            span {
+                font-weight: 700;
+                font-size: 38px;
+                line-height: 55px;
+                color: #CF51CE;
+            }
+        }
+    }
+    &__text {
+        margin-top: 15px;
+        margin-bottom: 0;
+        font-weight: 400;
+        font-size: 25px;
+        line-height: 160%;
+        color: rgba(51, 26, 47, 0.8);
+    }
+    &__img {
+        position: relative;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        &-item {
+            width: 560px;
+            height: 560px;
+        }
+        &-bg{
+            position: absolute;
+            top: 75px;
+            z-index: -1;
+        }
+    }
+
+}
