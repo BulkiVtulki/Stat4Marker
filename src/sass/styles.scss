@@ -4,9 +4,10 @@
 @import "libs/bootstrap-reboot.min";
 @import "libs/bootstrap-grid.min.scss";
 @import "base/variables";
-@import "base/media";
 @import "base/mixins";
 @import "libs/fonts";
+
+
 
 * {
     box-sizing: border-box;
@@ -27,3 +28,4 @@
 @import "blocks/promo";
 @import "blocks/history";
 @import "blocks/education";
+@import "base/media";

@@ -29,6 +29,7 @@
         margin-top: 85px;
         display: grid;
         grid-template: minmax(368px, auto) / repeat(4, 290px);
+        grid-auto-rows: minmax(368px, auto);    
         justify-content: space-between; 
     }
     &__img {

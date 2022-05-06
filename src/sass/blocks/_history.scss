@@ -1,5 +1,8 @@
 .history {
     margin-top: 147px;
+    &__title_mobile {
+        display: none;
+    }
     &__wrapper {
         margin-top: 85px;
         padding: 0 114px;
