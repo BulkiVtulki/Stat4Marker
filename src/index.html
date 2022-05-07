@@ -8,15 +8,54 @@
     <meta name="description" content="Обучающие курсы для поставщиков на маркетплейсы">
 
 
-    <link rel="stylesheet" href="css/styles.min.css">
+    <!-- FavIcon -->
+    <link rel="apple-touch-icon" sizes="57x57" href="img/icons/favicon/apple-icon-57x57.png">
+    <link rel="apple-touch-icon" sizes="60x60" href="img/icons/favicon/apple-icon-60x60.png">
+    <link rel="apple-touch-icon" sizes="72x72" href="img/icons/favicon/apple-icon-72x72.png">
+    <link rel="apple-touch-icon" sizes="76x76" href="img/icons/favicon/apple-icon-76x76.png">
+    <link rel="apple-touch-icon" sizes="114x114" href="img/icons/favicon/apple-icon-114x114.png">
+    <link rel="apple-touch-icon" sizes="120x120" href="img/icons/favicon/apple-icon-120x120.png">
+    <link rel="apple-touch-icon" sizes="144x144" href="img/icons/favicon/apple-icon-144x144.png">
+    <link rel="apple-touch-icon" sizes="152x152" href="img/icons/favicon/apple-icon-152x152.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="img/icons/favicon/apple-icon-180x180.png">
+    <link rel="icon" type="image/png" sizes="192x192"  href="img/icons/favicon/android-icon-192x192.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="img/icons/favicon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="96x96" href="img/icons/favicon/favicon-96x96.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="img/icons/favicon/favicon-16x16.png">
+    <link rel="manifest" href="js/manifest.json">
+    <meta name="msapplication-TileColor" content="#ffffff">
+    <meta name="msapplication-TileImage" content="img/icons/favicon/ms-icon-144x144.png">
+    <meta name="theme-color" content="#ffffff">
+
+    <!-- Primary Meta Tags -->
     <title>Stat4market</title>
+    <meta name="title" content="stat4market — Надежный сервис аналитики">
+    <meta name="description" content="Обучающие курсы для поставщиков на маркетплейсы">
+
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://metatags.io/">
+    <meta property="og:title" content="stat4market — Надежный сервис аналитики">
+    <meta property="og:description" content="Обучающие курсы для поставщиков на маркетплейсы">
+    <meta property="og:image" content="https://metatags.io/assets/meta-tags-16a33a6a8531e519cc0936fbba0ad904e52d35f34a46c97a2c9f6f7dd7d336f2.png">
+
+    <!-- Twitter -->
+    <meta property="twitter:card" content="summary_large_image">
+    <meta property="twitter:url" content="https://metatags.io/">
+    <meta property="twitter:title" content="stat4market — Надежный сервис аналитики">
+    <meta property="twitter:description" content="Обучающие курсы для поставщиков на маркетплейсы">
+    <meta property="twitter:image" content="https://metatags.io/assets/meta-tags-16a33a6a8531e519cc0936fbba0ad904e52d35f34a46c97a2c9f6f7dd7d336f2.png">
+
+
+
+    <link rel="stylesheet" href="css/styles.min.css">    
 </head>
 <body>
     <header class="header">
         <img src="img/icons/header/BG_Ellipse_right.svg" alt="bg_right" class="header__bg-right">
         <img src="img/icons/header/BG_Ellipse_left.svg" alt="bg_left" class="header__bg-left">
 
-        <div class="container container-mobile">            
+        <div class="container">            
             <div class="header__wrapper">
                 <div class="header__logo col-xl-4 col-md-7">
                     <div class="header__logo-img">
@@ -74,9 +113,14 @@
         
             <div class="container">
                 <img src="img/icons/promo/Superman.svg" alt="Superman" class="promo__img-mobile">   
-                <div class="promo__breadcrumb">
-                    <ul>
-                        <li><a href="#">Главная</a></li>
+                <div class="promo__breadcrumb breadcrumb">
+                    <ul itemscope itemtype="https://schema.org/BreadcrumbList">
+                        <li itemprop="itemListElement" itemscope itemtype="https://schema.org/ListItem">
+                            <a href="/" title="Главная" itemprop="item">
+                            <span itemprop="name">Главная</span>
+                            <meta itemprop="position" content="0">
+                            </a>
+                        </li>
                         <li>Обучение</li>
                     </ul>
                 </div>
@@ -144,7 +188,8 @@
     
         <section class="education" id="education">
             <div class="container">
-                <div class="education__title title">Обучение по продажам на <br>маркетплейсах от stat<span>4</span>market</div>
+                <div class="education__title title">Обучение по продажам на <br>маркетплейсах от <span class="education__wrapper-title">stat<span class="main-color">4</span>market</span> </div>
+                <span class="education__media-380 education__title title">stat<span class="main-color">4</span>market</span> 
                 <div class="education__subtitle">«Увеличение реальной прибыли, конкретика и ключевые инструменты, <br> которые дают результат» — на этом тезисе созданы наши курсы</div>
                 
                 <div class="education__wrapper">

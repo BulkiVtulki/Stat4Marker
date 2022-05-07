@@ -3,6 +3,9 @@
     .container {
         width: 1200px;
     }
+    .title {
+        font-size: 40px;
+    }
     
     .header {
         margin-top: 17px;
@@ -127,9 +130,9 @@
             grid-template: minmax(284px, auto) / repeat(4, 226px);
         }
         &__title {
-            span {
+            .main-color {
                 &::before {
-                    width: 217px;
+                    width: 220px;
                     height: 6px;
                 }
             }
@@ -149,27 +152,21 @@
         &__item-title {
             margin-top: 20px;
             font-size: 20px;
-            line-height: 30зч;
+            line-height: 30px;
         }
         &__descr {
             margin-top: 10px;
             font-size: 16px;
         }
     }
-    .title {
-        font-size: 40px;
-    }
 }
 
 //Дисплеи от 768px до 1279px
 @media (max-width: 1279px) {
     .container {
-        width: 738px;
-        overflow: hidden;
-    }
-    .container-mobile {
         width: 100%;
-        overflow: hidden;
+        margin: 0 auto;
+        padding: 0 15px;
     }
     .header {
         margin-top: 0;
@@ -329,7 +326,7 @@
         }
         &__text {
             margin-top: 17px;
-            width: 482px;
+            width: 65%;
         }
         &__img {
             display: none;
@@ -355,20 +352,25 @@
         &__wrapper {
             margin-top: 80px;
             padding: 0 15px;
-            grid-template: minmax(256px, auto) minmax(270px, auto) / 270px 118px 270px;
+            grid-template: repeat(2, minmax(280px, auto)) / 270px auto 270px;
             grid-auto-rows: minmax(256px, auto);
             column-gap: 40px;
             row-gap: 60px;
         }
-        &__text {
-            margin-bottom: 0;
-        }
         &__way {
             grid-column: 2 / 4;
+            p {
+                margin-bottom: 0;
+            }
 
         }
         &__summer {
             grid-column: 1 / 3;
+            p {            
+                &:nth-child(2) {
+                margin-bottom: 0;
+            }
+        }
         }
         &__pc {
             grid-column: 3 / 4;
@@ -382,20 +384,21 @@
             line-height: 32px;
         }
         &__wrapper {
-            width: 570px;
+            width: 77%;
             margin: 0 auto;
             margin-top: 80px;
-            grid-template: minmax(368px, auto) / repeat(auto-fill, 255px);
+            grid-template: minmax(200px, auto) / repeat(2, minmax(255px, auto) );
+            column-gap: 60px;
+            row-gap: 60px;
         }
     }
 }
 
 //Дисплеи от 1px до 767px
 @media (max-width: 767px) {
-    .container {
-        width: 330px;
-        margin: 0;
-        padding: 0 5px;
+    .title {
+        font-size: 24px;
+        line-height: 36px;
     }
     .header {
         &__wrapper {
@@ -438,6 +441,16 @@
                 transform: translateX(-10px);
             }
         }
+        &__nav {
+            width: 65%;
+            font-size: 20px;
+        }
+        &__list {
+            padding-left: 25px;
+        }
+        &__link {
+            padding-left: 25px;
+        }
     }
     .promo {
         padding-top: 93px;
@@ -476,7 +489,7 @@
             }
         }
         &__title {
-            width: 202px;
+            width: 61%;
             font-size: 26px;
             line-height: 39px;
         }
@@ -491,30 +504,75 @@
     .history {
         margin-top: 85px;
         &__wrapper {
-            grid-template: repeat(4, minmax(260px, auto)) / 330px;
-
+            grid-template: repeat(4, minmax(260px, auto)) / auto;
+            justify-items: center;
         }
         &__mobile {
             grid-row: 1 / 2;
             grid-column: 1 / 2;
+            width: 270px;
         }
         &__way {
             grid-row: 2 / 3;
             grid-column: 1 / 2; 
         }
         &__summer {
-            grid-row: 3 / 4;
-            grid-column: 1 / 2; 
-        }
-        &__pc {
             grid-row: 4 / 5;
             grid-column: 1 / 2; 
         }
+        &__pc {
+            width: 270px;
+            grid-row: 3 / 4;
+            grid-column: 1 / 2; 
+        }
+    }
+    .education {    
+        margin-top: 100px;
+        padding-bottom: 70px;
+        &__title {
+            width: 300px;
+            margin: 0 auto;
+        }
+        &__wrapper-title {
+            display: none;
+        }
+        &__media-380 {
+            display: block;
+            .main-color {
+                &::before {
+                    width: 131px;
+                    height: 4px;
+                }
+            }
+        }
+        &__subtitle {
+            margin-top: 21px;
+            font-size: 18px;
+            line-height: 28px;
+        }
+        &__wrapper {
+            width: 78%;
+            margin-top: 50px;
+            grid-template: repeat(4, minmax(200px, auto)) / repeat(auto-fill, 100%);
+            row-gap: 40px;            
+            justify-content: center;
+        }
+        &__img {
+            margin: 0 auto;
+        }
+        &__item-title {
+            text-align: center;
+            font-size: 18px;
+            line-height: 27px;
+        }
+        &__descr {
+            text-align: center;
+            font-size: 16px;
+            line-height: 26px;
+        }
     }
 
 
-    .title {
-        font-size: 24px;
-        line-height: 36px;
-    }
+
+
 }

@@ -3,7 +3,7 @@
     padding-bottom: 131px;
     &__title {
         position: relative;
-        span {
+        .main-color {
             color: #EA5DBB;
             &::before {
                 content: "";
@@ -16,6 +16,9 @@
                 transform: translateX(-31%);
             }
         }
+    }
+    &__media-380 {
+        display: none;
     }
     &__subtitle {
         margin-top: 23px;
