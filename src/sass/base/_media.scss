@@ -59,22 +59,18 @@
                 }
             }
         }
-        &__btn {
-            button {
-                padding-left: 35px;
-                width: 152px;
-            }
-        }
         &__logIn {
+            padding-left: 35px;
+            width: 152px;
             font-size: 18px;
             &::before {
                 width: 20px;
                 height: 20px;
-                top: -3px;
+                top: 10px;
+                left: 25px;
             }
             &:hover {
                 color: black;
-                transform: translateX(-20px);
             }
         }
     }
@@ -206,20 +202,16 @@
             margin-right: 20px;
             height: 62px;
         }
-        &__btn {
-            button {
-                padding-left: 35px;
-                width: 158px;
-                height: 44px;
-            }
-        }
-        &__logIn {
+        &__logIn {            
+            padding-left: 35px;
+            width: 158px;
+            height: 44px;
             font-size: 20px;
             color: #FFFFFF;
             &::before {
                 transform: scale(0.9);
-                top: -1px;
-                left: -37px;
+                top: 10px;
+                left: 25px;
             }
         }
         &__hamburger {
@@ -421,24 +413,17 @@
             margin-left: 10px;
             width: 95px;
         }
-        &__btn {
-            button {
-                padding-left: 20px;
-                width: 103px;
-                height: 36px;
-            }
-        }
         &__logIn {
+            padding-left: 20px;
+            width: 103px;
+            height: 36px;
             // padding-left: 30px;
             font-size: 14px;
             line-height: 28px;
             &::before {
                 transform: scale(0.65);
-                top: -5px;
-                left: -25px;
-            }
-            &:hover {
-                transform: translateX(-10px);
+                top: 6px;
+                left: 16px;
             }
         }
         &__nav {
